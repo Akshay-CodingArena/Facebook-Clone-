@@ -1,0 +1,16 @@
+if (self.CavalryLogger) { CavalryLogger.start_js_script(document.currentScript); }/*FB_PKG_DELIM*/
+
+__d("LSRoomTruncate",[],(function(a,b,c,d,e,f){function a(){var a=arguments,b=a[a.length-1];b.n;var c=[],d;return b.seq([function(a){return b.fe(b.ftr(b.db.table(63).fetch(),function(a){return b.i64.eq(a.groupRoomType,d)||b.i64.eq(a.groupRoomType,[0,5])}),function(a){return a["delete"]()})},function(a){return b.resolve(c)}])}e.exports=a}),null);
+__d("CometDeactivateRootQuery_facebookRelayOperation",[],(function(a,b,c,d,e,f){e.exports="4613174402139175"}),null);
+__d("CometSinglePageSocialLearningRootQuery_facebookRelayOperation",[],(function(a,b,c,d,e,f){e.exports="5802356303112955"}),null);
+__d("CometTimelineReviewViewerQuery_facebookRelayOperation",[],(function(a,b,c,d,e,f){e.exports="4682649041818839"}),null);
+__d("GroupsCometAdminAutonomyRootQuery_facebookRelayOperation",[],(function(a,b,c,d,e,f){e.exports="7888069204544402"}),null);
+__d("GroupsCometKeywordAlertedContentV2RootQuery_facebookRelayOperation",[],(function(a,b,c,d,e,f){e.exports="5267003263358746"}),null);
+__d("GroupsCometSubgroupRootQuery_facebookRelayOperation",[],(function(a,b,c,d,e,f){e.exports="5016496981804441"}),null);
+__d("GroupsCometViewerContentDeclinedRootQuery_facebookRelayOperation",[],(function(a,b,c,d,e,f){e.exports="7392161874191218"}),null);
+__d("GroupsCometViewerContentFlaggedRootQuery_facebookRelayOperation",[],(function(a,b,c,d,e,f){e.exports="8217455648271929"}),null);
+__d("GroupsCometViewerContentPendingRootQuery_facebookRelayOperation",[],(function(a,b,c,d,e,f){e.exports="5004384316346562"}),null);
+__d("GroupsCometViewerContentPublishedRootQuery_facebookRelayOperation",[],(function(a,b,c,d,e,f){e.exports="4997226366999669"}),null);
+__d("GroupsCometViewerContentRemovedRootQuery_facebookRelayOperation",[],(function(a,b,c,d,e,f){e.exports="5112354342176729"}),null);
+__d("HelpCenterHomePageRootQuery_facebookRelayOperation",[],(function(a,b,c,d,e,f){e.exports="4962275023893818"}),null);
+__d("LWICometRegulatedCategoriesDialogQuery_facebookRelayOperation",[],(function(a,b,c,d,e,f){e.exports="4081658921903801"}),null);
