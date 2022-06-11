@@ -1,24 +1,51 @@
 var i = 0;
 
-curr = document.body.scrollTop;
-console.log(curr, " ", document.body.scrollHeight);
+curr = body.scrollTop;
+console.log(curr, " ", body.scrollHeight);
 
 function scrolme() {
   console.log("script loaded");
-  var element = document.getElementsByTagName("trig");
+  var element = document.getElementById("trig");
   console.log("Scroll element ", element);
   height = element.scrollHeight;
   curr = element.scrollTop;
-  console.log(height, " ", curr);
+  console.log(
+    "Body Height",
+    document.body.scrollHeight,
+    "Component height",
+    height,
+    " ",
+    "Body scroll",
+    document.body.scrollTop,
+    "Element scroll",
+    curr,
+    "screen height",
+    screen.height
+  );
 
-  if (document.body.scrollTop > document.body.scrollHeight * 0.98 - 900) {
+  if (body.scrollTop > body.scrollHeight * 0.98 - 900) {
     console.log(
+      "Hiiiiiiiiii",
       body.scrollTop,
       " .................................. ",
       body.scrollHeight - 900
     );
     body.style.overflow = "hidden";
     setTimeout(duplicate, 500);
+  } else if (screen.width < 1000) {
+    console.log(
+      "Triggered",
+      screen.height + document.body.scrollTop,
+      document.body.scrollHeight - 1090
+    );
+    if (
+      document.body.scrollHeight - 1090 <
+      screen.height + document.body.scrollTop
+    ) {
+      console.log("Triggered");
+      body.style.overflow = "hidden";
+      setTimeout(duplicate, 500);
+    }
   }
 }
 

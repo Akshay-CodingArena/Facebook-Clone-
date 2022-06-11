@@ -4,9 +4,16 @@
 
 body {
 background-color: #F8F8F8;
-
+overflow: scroll;
+-webkit-overflow-scrolling: touch;
 
 }
+
+#coverimg{
+	height: 50vh;
+}
+
+
 
 nav{
 	background: white;
@@ -210,10 +217,18 @@ grid-row-gap: 3px;
 
 		margin-top: 1vh;
 	}
+
+	.hid{
+		display: none;
+	}
+	
+	#close{
+		margin-left: calc(100vw - 400px);
+	}
 	#navi{
 	
-		width:vw;
-		height:5vh;
+		width:100vw;
+		height:10vw;
 		
 	}
 
@@ -234,7 +249,8 @@ grid-row-gap: 3px;
 	#trig{
 		margin-right:0%;
 		margin-left:0%;
-		width:90vw;
+		width:100%;
+
 
 	}
 	#ures{
@@ -245,11 +261,24 @@ grid-row-gap: 3px;
 		
 	}
 
+	.cfon{
+		font-size: x-small;
+	}
+
 	#cover{
 		padding-left: 1px;
 		padding-right:1px;
-		height:25vh;
+		height:calc(25vw + 50px);
 	}
+	#coverimg{
+		border-radius: 0px;
+		height:calc(25vw + 125px);
+		padding: 0px;
+	}
+	#coverPad{
+		padding: 0px;
+	}
+
 	#profile{
 		display: flex;
 		justify-content: center;
