@@ -330,6 +330,8 @@
 fetch("https://api.unsplash.com/photos/?client_id=SzVS_jGjke9XsnTSbT2xOdEsVjiIC19y7Ate1lCM1Mo").then(res =>res.json()).then(result =>{console.log(result); img=result[Math.floor(Math.random() * 10)].urls.full; document.getElementById('poste').src=img;
 });
 console.log(img);
+scrolme();
+console.log("scrollTriggered");
 
 
 
