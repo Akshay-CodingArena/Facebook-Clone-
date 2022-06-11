@@ -39,7 +39,7 @@ function scrolme() {
       document.body.scrollHeight - 1090
     );
     if (
-      document.body.scrollHeight - 1190 <
+      document.body.scrollHeight - 1290 <
       screen.height + document.body.scrollTop
     ) {
       console.log("Triggered");
