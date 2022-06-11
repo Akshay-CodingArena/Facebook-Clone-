@@ -253,6 +253,7 @@ grid-row-gap: 3px;
 
 
 	}
+
 	#ures{
 		padding: 0px;
 		width:100vw;
@@ -296,9 +297,10 @@ grid-row-gap: 3px;
 		}
 	#btn1,#btn2{
 		width: 30vw;
-		height:5vh;
+		height:7.5vw;
 		justify-content:center ;
 		text-align: center;
+		font-size : 1.2vh;
 	}
 
 	#dblo{
@@ -362,6 +364,9 @@ grid-row-gap: 3px;
 		display : block;
 		justify-content: center;
 	}
-
+	.pinc{
+		padding : 1vh;
+		font-size : 1.2vh;
+	}
 	}
 
