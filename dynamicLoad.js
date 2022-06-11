@@ -89,3 +89,5 @@ function duplicate() {
   }
   body.style.overflow = "scroll";
 }
+
+scrolme();

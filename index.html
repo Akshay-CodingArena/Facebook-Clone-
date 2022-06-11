@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="https://kit.fontawesome.com/59c678f9b2.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script async src="dynamicLoad.js"></script>
+    <script defer src="dynamicLoad.js"></script>
     
 </head>
 <body  id="body" onscroll="scrolme()" class="overflow-y-scroll">
@@ -327,10 +327,10 @@
 </body>
 <script type="module">
     var img="";
-fetch("https://api.unsplash.com/photos/?client_id=SzVS_jGjke9XsnTSbT2xOdEsVjiIC19y7Ate1lCM1Mo").then(res =>res.json()).then(result =>{console.log(result); img=result[Math.floor(Math.random() * 10)].urls.full; document.getElementById('poste').src=img;
+fetch("https://api.unsplash.com/photos/?client_id=SzVS_jGjke9XsnTSbT2xOdEsVjiIC19y7Ate1lCM1Mo").then(res =>res.json()).then(result =>{console.log(result); img=result[Math.floor(Math.random() * 10)].urls.full;  document.getElementById('poste').src=img;
 });
 console.log(img);
-scrolme();
+
 console.log("scrollTriggered");
 
 
