@@ -18,6 +18,10 @@ input[type=text]:disabled {
     display: None;
 }
 @media only screen and (max-width : 1000px){
+    #signUp{
+      margin-top : 400px;  
+    }
+
     #cAccount{
         margin-left : 56vw;
         font-size: smaller;
