@@ -104,21 +104,27 @@
           class="w-[92%] outline-blue-600 hover:border-blue-500 mx-[4%] text-base py-[12px] px-2 border-solid border-gray-400 border-2 rounded-md my-2"
         />
         <input
+          id="vEmail"
           placeholder="Email address or phone number"
           name="email"
+          onchange="checkEmail()"
           class="w-[92%] outline-blue-600 hover:border-blue-500 mx-[4%] text-base py-[12px] px-2 border-solid border-gray-400 border-2 rounded-md my-2"
         />
         <input
+          id="passSignUP"
           placeholder="Password"
+          onchange="checkEmail()"
           type="password"
           name="password"
           class="outline-blue-600 mx-[4%] w-[92%] text-base py-[12px] px-2 border-solid border-gray-400 border-2 rounded-md"
         />
 
         <input
+          id="submitSignUP"
           value="Sign Up"
           class="mb-8 hover:bg-blue-800 mx-[4%] my-[12px] font-sans space-x-72 bg-blue-500 cursor-pointer text-lg w-[92%] py-2 text-white font-bold rounded-lg"
-          type="submit"
+          type="button"
+          onclick="checkEmail()"
         />
         <div id="fAccount">
           <h1 id="fAccountT" class="text-red-600 font-normal text-xl"></h1>
@@ -128,7 +134,34 @@
 
     <!------------Sign Up Finish ------------->
     <script>
+      function checkEmail() {
+        let email = document.querySelector("#vEmail").value;
+        if (email.search("@") >= 0 && email.search("." >= 0)) {
+          console.log(
+            document.querySelector("#passSignUP").value.length,
+            document.querySelector("#passSignUP").value
+          );
+          if (document.querySelector("#passSignUP").value.length < 8) {
+            console.log("Password short");
+            document.querySelector("#fAccountT").innerHTML =
+              "<span style='font-weight : 500;' class='ml-4'>" +
+              document.querySelector("#passSignUP").value +
+              "</span> is not a 8 digit password";
+          } else {
+            console.log("yes");
+            document.querySelector("#submitSignUP").type = "submit";
+            document.querySelector("#submitSignUP").disabled = false;
+          }
+        } else {
+          document.querySelector("#submitSignUP").disabled = true;
+          document.querySelector("#fAccountT").innerHTML =
+            "<span style='font-weight : 500;' class='ml-4'>" +
+            email +
+            "</span> is not a correct Email id";
+        }
+      }
       function blury() {
+        document.querySelector("#submitSignUP").disabled = true;
         console.log("Hii");
         //  document.querySelector("#intro").classList.add("blur");
         document.querySelector("#intro").classList.add("opac");
