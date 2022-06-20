@@ -113,7 +113,7 @@
         <input
           id="passSignUP"
           placeholder="Password"
-          onchange="checkEmail()"
+          onkeyup="checkEmail()"
           type="password"
           name="password"
           class="outline-blue-600 mx-[4%] w-[92%] text-base py-[12px] px-2 border-solid border-gray-400 border-2 rounded-md"
@@ -144,9 +144,7 @@
           if (document.querySelector("#passSignUP").value.length < 8) {
             console.log("Password short");
             document.querySelector("#fAccountT").innerHTML =
-              "<span style='font-weight : 500;' class='ml-4'>" +
-              document.querySelector("#passSignUP").value +
-              "</span> is not a 8 digit password";
+              " Password length should be atleast 8";
           } else {
             console.log("yes");
             document.querySelector("#submitSignUP").type = "submit";
